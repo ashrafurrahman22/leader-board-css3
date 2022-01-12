@@ -1,0 +1,145 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(86, 46, 225);
+    
+    color: white;
+
+
+}
+nav a {
+     text-decoration: none;
+     color: white;
+     
+ }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container {
+    
+    background-color: white;
+    width: 870px;
+    padding:30px;
+    margin-top: 20px;
+    border-radius: 15px;
+   
+}
+.top-players {
+    margin-bottom: 30px;
+  
+    
+}
+.players{
+    
+    /* padding: 30px; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    
+}
+.section-title {
+    color: blueviolet;
+    margin-top: 3px;
+  
+    
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+    margin-right: 15px;
+}
+.player {
+    display: flex;
+    
+}
+.player-name {
+    font-size: 18px;
+} 
+hr {
+    border: 1px solid lightsalmon;
+    margin-bottom: 20px;
+}
+/*--------------
+ top-blog-styles
+ --------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:20px; 
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+    margin-right: 15px;
+}
+.blog { 
+    display: flex;
+}
+.blog-author a {
+    text-decoration: none;
+}
+/*----------------
+ course styles
+------------------ */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .course-banner img {
+    height: 104px;
+    width: 224px;
+}
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-duration {
+    padding: 5px;
+    border-radius: 30px;
+    background-color: darkcyan;
+}
+.fa-star {
+    font-size: 16px;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color:cadetblue;
+}
+/*----------------
+ media quaries
+------------------ */
+/* mobile devices */
+@media only screen and (max-width:688px) 
+{
+    .container {
+        width: 100%;
+    }
+    .blogs  .players .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player .blog {
+        flex-direction: column;
+    }
+    
+}
