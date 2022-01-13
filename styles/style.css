@@ -6,11 +6,17 @@ body {
     background-color: lightgray;
 
 }
+.idea {
+    cursor: not-allowed;
+    color: white;
+    font-size: 35px;
+}
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgb(86, 46, 225);
-    
+    border-radius: 10px;
     color: white;
 
 
@@ -18,6 +24,7 @@ nav {
 nav a {
      text-decoration: none;
      color: white;
+     font-size: 20px;
      
  }
 
@@ -82,6 +89,8 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap:20px; 
+    flex-direction: ;
+    transform:scale3D();
 }
 
 .blog .thumbnail img {
@@ -101,7 +110,7 @@ hr {
 .courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
+    grid-column-gap: 30px;
 }
 .course .course-banner img {
     height: 104px;
